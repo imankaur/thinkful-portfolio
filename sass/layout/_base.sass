@@ -1,0 +1,21 @@
+*, *::before, *::after
+  box-sizing: border-box
+body 
+  +establish-baseline
+  font-family: 'Roboto', sans-serif
++media-max(640px)
+  .container--main, .nav--primary
+    +transition(all .2s ease)
+  .container--main
+    width: 100%
+    position: relative
+    z-index: 1
+  .nav--primary
+    width: 50%
+    height: 100vh
+    position: absolute
+    top: 0
+    left: -100%
+    &.active
+      z-index: 2
+      left: 0

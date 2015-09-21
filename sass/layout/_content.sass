@@ -1,0 +1,63 @@
+.container--body 
+  h1, h2
+    color: $dark-brown
+    +margin-trailer(.5)
+  h1
+    +adjust-font-size-to(24px)
+    font-weight: 700
+    text-transform: uppercase
+  h2 
+    +adjust-font-size-to(18px)
+    
+  p 
+    +adjust-font-size-to(14px)
+    +adjust-leading-to(.75)
+    font-weight: 300
+    +margin-trailer
+  a 
+    color: #466B81
+  +media-max(640px)
+    padding: rhythm(2) rhythm(1)
+  +media-min(640px)
+    max-width: rhythm(30)
+    +padding-leader(2)
+    +padding-trailer(2)
+    margin: 0 auto
+.intro--text 
+  +trailing-border
+  +margin-trailer(2)
+  p 
+    +adjust-font-size-to(24px)
+    font-weight: 300
+    text-align: center
+    strong
+      font-weight: 400
+
+.teasers
+  +display-flex
+  .teaser
+    +flex(1 0)
+    text-align: center
+  i 
+    display: block
+    color: #75504E
+  h2 
+    +adjust-font-size-to(20px)
+    +adjust-leading-to(2)
+    font-weight: 300
+.portfolio
+  &--item
+    border: lighten($dark-brown, 80%) rhythm(.25) solid
+    text-align: center
+    +padding-trailer(.5)
+    img 
+      width: 100%
+      height: auto
+      display: block
+      +margin-trailer(.5)
+    a 
+      +inline-block
+      font-weight: 300
+      +adjust-font-size-to(14px)
+      margin: 0 rhythm(.5)
+      text-decoration: none

@@ -1,0 +1,52 @@
+header 
+  background-size: cover
+  width: 100%
+  position: relative
+  h1, p 
+    position: absolute
+    color: white
+  h1
+    font-weight: 900
+    +adjust-font-size-to(32px)
+    text-transform: uppercase
+  p
+    font-weight: 300
+    +adjust-font-size-to(14px)
+  +media-max(640px)
+    height: rhythm(10)
+    background: image-url('heros/hero-1x.jpg') center center
+    border-top: $dark-brown rhythm(.3) solid
+    h1, p 
+      left: rhythm(1)
+    h1
+      bottom: rhythm(2)
+    p 
+      bottom: rhythm(1)
+  +media-min(640px)
+    background: image-url('heros/hero-2x.jpg') top center
+    .nav--toggle
+      display: none
+    h1, p 
+      left: 0
+      right: 0
+      text-align: center
+    height: 35vh
+    h1
+      bottom: rhythm(3)
+    p 
+      bottom: rhythm(2)
+    .landing &
+      height: 100vh
+      h1
+        top: 48vh
+      p 
+        top: 55vh
+  .nav--toggle
+    position: absolute
+    top: rhythm(1)
+    right: rhythm(1)
+  i 
+    color: white
+    &.close 
+      display: none
+

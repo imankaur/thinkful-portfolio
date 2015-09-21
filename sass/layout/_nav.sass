@@ -1,0 +1,52 @@
+.nav--primary 
+  
+  +box-shadow(0 0 5px rgba(black, .1))
+  a 
+    color: complement($dark-brown)
+    text-decoration: none
+  +media-max(640px)
+    background-color: white
+    a 
+      display: block
+      +adjust-leading-to(2)
+      
+      padding: 0 rhythm(.5) 
+    li
+      border-bottom: lighten($dark-brown, 60%) 1px solid
+      font-weight: 300
+      &.active a 
+        background-color: #75504E
+        color: white
+  +media-min(640px)
+    background-color: rgba(white, .8)
+    text-align: center
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 1000
+    a 
+      +adjust-leading-to(2)
+    li 
+      +inline-block
+      margin: 0 rhythm(.5)
+      &.nav--toggle
+        display: none
+      &.active 
+        a 
+          color: #75504E
+    
+
+.social-media
+  text-align: center
+  +margin-leader(.5)
+  +margin-trailer(.5)
+  a 
+    color: white
+    +transition(all .2s ease-out)
+    &:hover
+      +scale(1.1)
+  li 
+    +inline-block
+    margin: 0 rhythm(.5)
+    
