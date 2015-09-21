@@ -140,7 +140,7 @@ header p {
   /* line 1, ../sass/layout/_header.sass */
   header {
     height: 15rem;
-    background: url('/images/heros/hero-1x.jpg?1442717387') center center;
+    background: url("../images/heros/hero-1x.jpg") center center;
     border-top: #31231b 0.45rem solid;
   }
   /* line 19, ../sass/layout/_header.sass */
@@ -159,7 +159,7 @@ header p {
 @media (min-width: 640px) {
   /* line 1, ../sass/layout/_header.sass */
   header {
-    background: url('/images/heros/hero-2x.jpg?1442717375') top center;
+    background: url("../images/heros/hero-2x.jpg") top center;
     height: 35vh;
   }
   /* line 27, ../sass/layout/_header.sass */
